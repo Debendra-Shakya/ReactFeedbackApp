@@ -1,20 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function Header({ text, bgcolor }) {
+function Header({ text, bgcolor, textColor }) {
   const style = {
     backgroundColor: bgcolor,
+    color: textColor,
   };
 
   return (
     <div style={style}>
-      <h2>{text}</h2>
+      <div className='container'>
+        <h2>{text}</h2>
+      </div>
     </div>
   );
 }
 Header.defaultProps = {
-  text: "i am a header default prop!",
-  bgcolor: "hsl(80deg 100% 50%)",
+  text: 'Feedback App',
+  bgColor: 'rgba(0,0,0,0.4)',
+  textColor: '#ff6a95',
 };
 Header.propTypes = {
   text: PropTypes.string,
