@@ -1,8 +1,14 @@
 import React from "react";
+import FeedbackList from "./components/FeedbackList";
 import Header from "./components/Header";
 
 const App = () => {
-  return <Header />;
+  return (
+    <>
+      <Header />
+      <FeedbackList />
+    </>
+  );
 };
 
 export default App;
