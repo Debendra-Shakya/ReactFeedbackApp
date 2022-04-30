@@ -1,21 +1,23 @@
+import {v4 as uuidv4} from 'uuid'
+
 const FeedbackData = [
   {
-    id: "1",
+    id: uuidv4(),
     text: "text1",
     rating: 7,
   },
   {
-    id: "2",
+    id: uuidv4(),
     text: "text 2",
     rating: 4,
   },
   {
-    id: "3",
+    id:  uuidv4(),
     text: "text 3",
     rating: 8,
   },
   {
-    id: "4",
+    id:  uuidv4(),
     text: "text 4",
     rating: 9,
   },
